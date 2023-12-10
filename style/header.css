@@ -1,3 +1,7 @@
+.logo {
+  filter: saturate(1000) brightness(100) hue-rotate(90deg);
+  animation: logo 70s linear infinite; /*logo muda de cor*/
+}
 header,
 nav,
 nav > ul {
@@ -47,4 +51,12 @@ header > form {
   object-fit: cover;
 
   border-radius: 50%;
+}
+@keyframes logo {
+  from {
+    filter: saturate(1000) brightness(100) hue-rotate(0deg);
+  }
+  to {
+    filter: saturate(1000) brightness(100) hue-rotate(360deg);
+  }
 }
