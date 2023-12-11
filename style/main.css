@@ -20,9 +20,19 @@ figure > img {
 
   object-fit: cover;
   object-position: center;
+
+  transition: all 0.5s ease-in-out;
+  /*transition-timing-function: ease-in-out;*/
+}
+img:hover {
+  transform: scale(1.1);
 }
 .details {
   padding: 2.2rem;
+
+  background-color: var(--color-base-white);
+  position: relative;
+  z-index: 1;
 }
 .details > h2 {
   font-size: 1.8rem;
