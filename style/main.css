@@ -13,6 +13,8 @@ main > h2 {
   background-color: var(--color-base-white);
   border-radius: 0.8rem;
   overflow: hidden; /*esconder oq sobra*/
+
+  animation: appear 2s;
 }
 figure > img {
   width: 100%;
@@ -23,6 +25,8 @@ figure > img {
 
   transition: all 0.5s ease-in-out;
   /*transition-timing-function: ease-in-out;*/
+
+  display: block;
 }
 img:hover {
   transform: scale(1.1);
@@ -48,4 +52,14 @@ img:hover {
   line-height: 0;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
